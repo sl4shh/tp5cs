@@ -84,6 +84,7 @@ namespace ShopManager
                         if(ar.InStock) Console.WriteLine($"Quantity: 1");
                         else Console.WriteLine($"Quantity: 0");
                     }
+                    Console.WriteLine();
                     PressToContinue();
                     return;
                 }

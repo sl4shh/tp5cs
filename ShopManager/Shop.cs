@@ -145,8 +145,10 @@ namespace ShopManager
             {
                 try
                 {
+                    var firstMoney = this.Balance;
                     Sell(si.Name, si.Quantity);
                     Console.WriteLine($"Bought {si.Quantity} {si.Name}");
+                    shoppingList.Budget -= this.Balance - firstMoney;
                 }
                 catch (NotEnoughItemsException e)
                 {
@@ -166,7 +168,7 @@ namespace ShopManager
                 }
             }
 
-            return this.Balance;
+            return shoppingList.Budget;
         }
     }
 }
