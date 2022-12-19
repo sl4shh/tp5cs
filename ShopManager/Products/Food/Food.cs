@@ -8,7 +8,7 @@ namespace ShopManager.Products.Food
 
         public override string GetInfo()
         {
-            return $"Name: {this.Name}\nPrice: {this.Price},\nQuantity: {this.Quantity}\n";
+            return $"Name: {this.Name}\nPrice: {this.Price}\nQuantity: {this.Quantity}\n";
         }
 
         public override string ToString() => Name;

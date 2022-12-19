@@ -9,7 +9,7 @@ namespace ShopManager.Products.Wine
 
         public override string GetInfo()
         {
-            return $"Name: {Name}\nPrice: {Price}\nAge: {Age}\nQuantity: {Quantity}\n";
+            return $"Name: {Name}\nPrice: {Price}\nAge: {Age} years\nQuantity: {Quantity}\n";
         }
 
         public override string ToString() => $"{Name} {Age}yrs";

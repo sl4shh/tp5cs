@@ -21,7 +21,7 @@ namespace ShopManager
             Console.WriteLine("4) Product's stock");
             Console.WriteLine("5) Use shopping list");
             Console.WriteLine("6) Exit");
-            Console.WriteLine("Your choice: ");
+            Console.Write("Your choice: ");
             char c = Console.ReadLine()![0];
             if (c is > '0' and < '7')
             {
@@ -37,7 +37,7 @@ namespace ShopManager
         
         public static void PressToContinue()
         {
-            Console.WriteLine("Press any key to continue...");
+            Console.Write("Press any key to continue...");
             Console.ReadLine();
         }
         
@@ -84,7 +84,6 @@ namespace ShopManager
                         if(ar.InStock) Console.WriteLine($"Quantity: 1");
                         else Console.WriteLine($"Quantity: 0");
                     }
-                    Console.WriteLine();
                     PressToContinue();
                     return;
                 }

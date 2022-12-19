@@ -1,6 +1,7 @@
 using System;
 using ShopManager.Products;
 using ShopManager.Products.Artwork;
+using ShopManager.Products.Wine;
 
 namespace ShopManager
 {
@@ -30,7 +31,7 @@ namespace ShopManager
                     var st = (Stackable)Products[i];
                     a[i] = (Products[i].Name, st.Quantity);
                 }
-                else a[i] = (Products[i].Name, 1);
+                else if(Products[i] is Wine w)a[i] = (Products[i].Name +" "+ w.Age+"yrs", 1);
             }
 
             return a;
